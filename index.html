@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zhe Liu">
+    <title>Zhe Liu</title>
+    <style>
+        :root {
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --color-text: #222;
+            --color-text-light: #555;
+            --color-link: #0055bb;
+            --color-link-hover: #003366;
+            --color-bg: #fff;
+            --color-border: #eee;
+            --max-width: 750px;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--color-text);
+            background: var(--color-bg);
+            margin: 0;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 5px; color: #000; letter-spacing: -0.5px; }
+        h2 { 
+            font-size: 1.4rem; 
+            font-weight: 600; 
+            border-bottom: 2px solid var(--color-border); 
+            padding-bottom: 8px; 
+            margin-top: 20px; 
+            margin-bottom: 10px;
+        }
+        
+        a { color: var(--color-link); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--color-link-hover); }
+
+        p { margin-bottom: 16px; }
+
+        .profile-header {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+            width: 120px;
+            height: 180px;
+            background-color: #f4f4f4;
+            border-radius: 4px; 
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-info { flex: 1; }
+        
+        .contact-links {
+            font-family: monospace; 
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        .contact-links span { margin-right: 20px; }
+
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+        .project-title {
+            font-size: 1.15rem;
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 6px;
+        }
+
+        .project-desc {
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .resource-links {
+            font-family: var(--font-main);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .resource-links a {
+            margin-right: 12px;
+            color: var(--color-link);
+        }
+        .resource-links a:hover {
+            background-color: #eef6ff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+        }
+
+        @media (max-width: 650px) {
+            .profile-header { flex-direction: column-reverse; gap: 25px; }
+            .profile-photo { width: 140px; height: 140px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="profile-header">
+            <div class="profile-info">
+                <h1>Zhe Liu</h1>
+                
+                <p>Hi!</p>
+
+                <p>
+                    I do Machine Learning research. 
+                    I work closely with the AI for Science team at ByteDance.
+                </p>
+
+                <p>
+                    Meanwhile, I am pursuing my Ph.D. in Chemistry at UW-Madison.
+                    I am interested in quantum dynamics and molecular dynamics.
+                </p>
+
+                <div class="contact-links">
+                    <span><a href="mailto:zhe.liu2@wisc.edu">Email</a></span>
+                    <span><a href="https://scholar.google.com/citations?user=z0TGG5UAAAAJ">Google Scholar</a></span>
+                    <span><a href="https://www.linkedin.com/in/zhe-liu-3b5b09142/">LinkedIn</a></span>
+                </div>
+            </div>
+            
+            <img src="profile.jpg" alt="Zhe Liu" class="profile-photo">
+        </header>
+
+        <section>
+            <h2>Selected Research</h2>
+            <p style="font-size: 0.85rem; color: #666; margin-top: -5px; margin-bottom: 15px;">
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" style="color: #666; text-decoration: underline;">Full list on Google Scholar</a>
+            </p>
+
+            <div class="project-item">
+                <div class="project-title">
+                    Towards A Universally Transferable Acceleration Method for Density Functional Theory
+                </div>
+                <div class="project-meta">
+                    Zhe Liu, Yuyan Ni, Zhichen Pu, Qiming Sun, Siyuan Liu, Wen Yan
+                </div>
+                <div class="project-desc">
+                    <strong>TL;DR:</strong>
+                    We propose using Graph Neural Networks to learn electron density. This approach is significantly more transferable than baseline methods. A follow-up work is currently in preparation.
+                </div>
+                <div class="resource-links">
+                    <a href="https://arxiv.org/abs/2509.25724" target="_blank">[ arXiv ]</a>
+                    <a href="https://huggingface.co/datasets/ByteDance-Seed/SCFbench" target="_blank">[ Code (huggingface) ]</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    Nonadiabatic Dynamics with Constrained Nuclear-Electronic Orbital Theory
+                </div>
+                <div class="project-meta">
+                    Zhe Liu, Zehua Chen, Yang Yang
+                </div>
+                <div class="project-desc">
+                    <strong>TL;DR:</strong>
+                    We developed a new nonadiabatic dynamics method that efficiently incorporates nuclear quantum effects.
+                </div>
+                <div class="resource-links">
+                    <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5c01020" target="_blank">[ PDF ]</a>
+                    <a href="https://arxiv.org/abs/2504.08900" target="_blank">[ arXiv ]</a>
+                    <a href="https://github.com/zheliu17/simple_CMD" target="_blank">[ Code (baseline implementation) ]</a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            &copy; 2026 Zhe Liu.
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zhe Liu">
+    <meta name="description"
+        content="Personal homepage of Zhe Liu, PhD student in Theoretical Chemistry at UW-Madison and machine learning researcher.">
+    <link rel="canonical" href="https://zheliu17.github.io/" />
     <title>Zhe Liu</title>
     <style>
         :root {
@@ -31,20 +34,36 @@
             margin: 0 auto;
         }
 
-        h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 5px; color: #000; letter-spacing: -0.5px; }
-        h2 { 
-            font-size: 1.4rem; 
-            font-weight: 600; 
-            border-bottom: 2px solid var(--color-border); 
-            padding-bottom: 8px; 
-            margin-top: 20px; 
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 8px;
+            margin-top: 20px;
             margin-bottom: 10px;
         }
-        
-        a { color: var(--color-link); text-decoration: none; }
-        a:hover { text-decoration: underline; color: var(--color-link-hover); }
 
-        p { margin-bottom: 16px; }
+        a {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--color-link-hover);
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
 
         .profile-header {
             display: flex;
@@ -58,19 +77,24 @@
             width: 120px;
             height: 180px;
             background-color: #f4f4f4;
-            border-radius: 4px; 
+            border-radius: 4px;
             object-fit: cover;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .profile-info { flex: 1; }
-        
+        .profile-info {
+            flex: 1;
+        }
+
         .contact-links {
-            font-family: monospace; 
+            font-family: monospace;
             font-size: 0.9rem;
             margin-top: 15px;
         }
-        .contact-links span { margin-right: 20px; }
+
+        .contact-links span {
+            margin-right: 20px;
+        }
 
         .project-item {
             margin-bottom: 25px;
@@ -98,10 +122,12 @@
             font-size: 0.9rem;
             font-weight: 500;
         }
+
         .resource-links a {
             margin-right: 12px;
             color: var(--color-link);
         }
+
         .resource-links a:hover {
             background-color: #eef6ff;
             text-decoration: none;
@@ -118,23 +144,31 @@
         }
 
         @media (max-width: 650px) {
-            .profile-header { flex-direction: column-reverse; gap: 25px; }
-            .profile-photo { width: 140px; height: 140px; }
+            .profile-header {
+                flex-direction: column-reverse;
+                gap: 25px;
+            }
+
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        
+
         <header class="profile-header">
             <div class="profile-info">
                 <h1>Zhe Liu</h1>
-                
+
                 <p>Hi!</p>
 
                 <p>
-                    I do machine learning research. 
+                    I do machine learning research.
                     I work closely with the AI for Science team at ByteDance.
                 </p>
 
@@ -150,14 +184,15 @@
                     <span><a href="https://github.com/zheliu17">GitHub</a></span>
                 </div>
             </div>
-            
+
             <img src="profile.jpg" alt="Zhe Liu" class="profile-photo">
         </header>
 
         <section>
             <h2>Selected Research</h2>
             <p style="font-size: 0.85rem; color: #666; margin-top: -5px; margin-bottom: 15px;">
-                <a href="https://scholar.google.com/citations?user=YOUR_ID" style="color: #666; text-decoration: underline;">Full list on Google Scholar</a>
+                <a href="https://scholar.google.com/citations?user=YOUR_ID"
+                    style="color: #666; text-decoration: underline;">Full list on Google Scholar</a>
             </p>
 
             <div class="project-item">
@@ -170,12 +205,14 @@
                 <div class="project-desc">
                     <i>The Fourteenth International Conference on Learning Representations (ICLR 2026)</i></br>
                     <strong>TL;DR:</strong>
-                    We propose using Graph Neural Networks to learn electron density. This approach exhibits superior transferability in various aspects. A follow-up work is currently in preparation.
+                    We propose using Graph Neural Networks to learn electron density. This approach exhibits superior
+                    transferability in various aspects. A follow-up work is currently in preparation.
                 </div>
                 <div class="resource-links">
                     <a href="https://arxiv.org/abs/2509.25724" target="_blank">[ arXiv ]</a>
                     <a href="https://openreview.net/forum?id=JNuk3yGDKE" target="_blank">[ OpenReview ]</a>
-                    <a href="https://huggingface.co/datasets/ByteDance-Seed/SCFbench" target="_blank">[ Code (huggingface) ]</a>
+                    <a href="https://huggingface.co/datasets/ByteDance-Seed/SCFbench" target="_blank">[ Code
+                        (huggingface) ]</a>
                 </div>
             </div>
 
@@ -189,12 +226,14 @@
                 <div class="project-desc">
                     <i>The Journal of Physical Chemistry Letters (J. Phys. Chem. Lett.)</i></br>
                     <strong>TL;DR:</strong>
-                    We developed a new nonadiabatic dynamics method that efficiently incorporates nuclear quantum effects.
+                    We developed a new nonadiabatic dynamics method that efficiently incorporates nuclear quantum
+                    effects.
                 </div>
                 <div class="resource-links">
                     <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5c01020" target="_blank">[ PDF ]</a>
                     <a href="https://arxiv.org/abs/2504.08900" target="_blank">[ arXiv ]</a>
-                    <a href="https://github.com/zheliu17/simple_CMD" target="_blank">[ Code (baseline implementation) ]</a>
+                    <a href="https://github.com/zheliu17/simple_CMD" target="_blank">[ Code (baseline implementation)
+                        ]</a>
                 </div>
             </div>
 
@@ -207,4 +246,5 @@
     </div>
 
 </body>
+
 </html>
